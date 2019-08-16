@@ -1,0 +1,47 @@
+<html>
+<head>
+<title>uol-grade-calculator</title>
+<script type="text/javascript" src="./jquery-3.4.1.min.js"></script>
+<script type="text/javascript" src="./logic.js"></script>
+</head>
+<body>
+<b>Grade Calculator</b>
+<form id="grade-inputs" style="width:490px">
+<fieldset id="l1">
+<label>Level 4 (CO11** courses)</label>
+<input style="width:34px;" type="number" id="l1a">
+<input style="width:34px;" type="number" id="l1b">
+<input style="width:34px;" type="number" id="l1c">
+<input style="width:34px;" type="number" id="l1d">
+</fieldset>
+<fieldset>
+<label>Level 5 (CO22** courses)</label>
+<input style="width:34px;" type="number" id="l2a">
+<input style="width:34px;" type="number" id="l2b">
+<input style="width:34px;" type="number" id="l2c">
+<input style="width:34px;" type="number" id="l2d">
+</fieldset>
+<fieldset>
+<label>Level 6 (CO33** courses)</label>
+<input style="width:34px;" type="number" id="l3a">
+<input style="width:34px;" type="number" id="l3b">
+<input style="width:34px;" type="number" id="l3c">
+<input style="width:34px;" type="number" id="l3d">
+<input style="width:34px;" type="number" id="l3e">
+<input style="width:34px;" type="number" id="l3f"><br>
+</fieldset>
+<fieldset>
+<label>Project</label>
+<input style="width:34px;" type="number" id="l3project">
+</fieldset>
+<button id="calculate" onclick="set_calculated_text()">Calculate</button>
+<input id="form-reset" type="reset" value="Reset">
+</form>
+<p><b>Calculated: </b><span id="calculated-text"></span></p>
+<script>
+$("#grade-inputs").submit(function(event){
+   event.preventDefault()
+})
+</script>
+</body>
+</html>
