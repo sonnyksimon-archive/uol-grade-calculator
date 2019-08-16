@@ -1,8 +1,6 @@
 var level1, level2, level3, projectOne, projectOneUsed, projectTwo, projectTwoUsed, values, level2total, level2count;
 
-function load() {
-    console.log("start");
-    
+function load() {    
     level1 = [];
     level2 = [];
     level3 = [];
@@ -13,7 +11,7 @@ function load() {
 
     values = $("#grade-inputs input[type=number]");
     
-    console.log(values);
+    //console.log(values);
 
     for (var i = 0; i < 4; i++) {
         if ($(values[i]).val()) {
@@ -25,7 +23,7 @@ function load() {
         };
     }
     
-    console.log(level1);
+    //console.log(level1);
 
     level2total = 0;
     level2count = 0;
@@ -47,7 +45,7 @@ function load() {
         };
     }
     
-    console.log(level2);
+    //console.log(level2);
     
     // are we missing some values, then make an average. NB: can't handle resits.
     if (level2count < 4) {
@@ -66,7 +64,7 @@ function load() {
         }
     }
     
-    console.log(level2);
+    //console.log(level2);
     
     for (var i = 8; i < 14; i++) {
         if ($(values[i]).val()) {
@@ -80,9 +78,7 @@ function load() {
     projectOne = parseInt($('#l3project').val());
     projectTwo = projectOne;
 
-    console.log(level3);
-        
-    console.log('stop');
+    //console.log(level3);
 }
 
 function sum (arr) {
