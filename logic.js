@@ -1,6 +1,6 @@
 var level1, level2, level3, projectOne, projectOneUsed, projectTwo, projectTwoUsed, values, level2total, level2count;
 
-function load() {    
+function load () {    
     level1 = [];
     level2 = [];
     level3 = [];
@@ -203,7 +203,7 @@ function exemptionsAtLevelOne () {
     return count;
 }
 
-function calculate() {
+function calculate () {
     load();
     m = 8 - exemptionsAtLevelOne();
     n = Math.min(m, 6);
@@ -219,6 +219,6 @@ function calculate() {
     return ((sum(X) + sum(Y) * 3 + sum(Z) * 5) / (n + 54)).toFixed(2);
 }
 
-function set_calculated_text() {
+function setCalculatedText () {
     $("#calculated-text").text(calculate());
 }
